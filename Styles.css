@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Sea\ Gradient.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+
+.content-reverse {
+    flex-direction: row-reverse;
+}
+
+.Hoofd{
+    text-align: left;
+    margin: 20px;
+    max-width: 45%;
+    padding-left: 40px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.img img{
+width: 100%;
+}
+
+.img{
+width: 50%;
+margin-left: 45px;
+margin-top: 20px;
+}
+
+.right {
+    width: 60%;
+}
+
+.navgate{
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 85%;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listcontainer{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.navgate li{
+    list-style-type: none;
+    padding: 0 0 20px 0;
+}
+
+.navgate ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.navgate ul li:hover:after{
+    width: 55%; 
+    
+}
+
+.navgate ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    transition: 0.5s;
+}
+
+.navgate ul li{
+    list-style: none;
+    display: block;
+    
+    position: relative;
+}
+
+.button button {
+    color: lightblue;
+    background-color: #fff;
+    padding: 60px 80px;
+    font-size: 20px;
+}
+
+.button{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button button:hover{
+    background: green;
+    box-shadow: 10px 10px 10px;
+    transition: 2s;
+}
+
+.button button a {
+    color: inherit; 
+    text-decoration:none;
+}
